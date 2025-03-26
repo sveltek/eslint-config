@@ -1,0 +1,74 @@
+{
+  "name": "@sveltek/eslint-config",
+  "version": "1.0.0",
+  "author": "Sveltek",
+  "contributors": [
+    {
+      "name": "Ivo Dolenc",
+      "url": "https://github.com/ivodolenc"
+    }
+  ],
+  "description": "Sveltek's config for ESLint.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sveltek/eslint.git"
+  },
+  "homepage": "https://github.com/sveltek/eslint",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "sveltek",
+    "svelte",
+    "sveltekit",
+    "eslint",
+    "eslint-config",
+    "presets",
+    "config"
+  ],
+  "scripts": {
+    "build": "hyperbundler",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write .",
+    "prepublishOnly": "pnpm build"
+  },
+  "packageManager": "pnpm@10.7.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=10.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.0.0",
+    "typescript": ">=5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@eslint/js": "^9.23.0",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "eslint-plugin-svelte": "^3.3.3",
+    "globals": "^16.0.0",
+    "svelte-eslint-parser": "^1.1.0"
+  },
+  "devDependencies": {
+    "@hypernym/bundler": "^0.14.3",
+    "@sveltek/prettier-config": "^1.0.1",
+    "@sveltek/tsconfig": "^1.0.0",
+    "eslint": "^9.23.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  }
+}
