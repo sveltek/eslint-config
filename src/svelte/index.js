@@ -5,7 +5,6 @@ import tsParser from '@typescript-eslint/parser'
 import sveltePlugin from 'eslint-plugin-svelte'
 import svelteParser from 'svelte-eslint-parser'
 
-/** @type {import("eslint").Linter.Config} */
 export const svelteConfig = {
   files: ['**/*.svelte'],
   languageOptions: {

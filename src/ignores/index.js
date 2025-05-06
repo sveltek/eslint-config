@@ -1,0 +1,41 @@
+export const ignores = [
+  // Dirs
+  '**/.git/',
+  '**/.private/',
+  '**/.build/',
+  '**/.coverage/',
+  '**/.history/',
+  '**/.output/',
+  '**/.cache/',
+  '**/.temp/',
+  '**/.tmp/',
+  '**/.out/',
+  '**/.svelte-kit/',
+  '**/.vercel/',
+  '**/.netlify/',
+  '**/.next/',
+  '**/.nuxt/',
+  '**/node_modules/',
+  '**/dist/',
+  '**/build/',
+  '**/coverage/',
+  '**/functions/',
+  '**/public/',
+  '**/output/',
+  '**/cache/',
+  '**/temp/',
+  '**/tmp/',
+  '**/out/',
+  // Files
+  '**/.DS_Store',
+  '**/.env*',
+  '**/*-lock.*',
+  '**/*.lock',
+  '**/*.log*',
+  '**/*.min.*',
+  '**/*.d.ts',
+]
+
+export const ignoresConfig = {
+  ignores,
+}
