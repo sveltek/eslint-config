@@ -10,13 +10,15 @@
 pnpm add -D @sveltek/eslint-config
 ```
 
-## Setup
+## Usage
 
-Add `lint` commands for manual linting (optional):
+### Linting Commands
 
-#### package.json
+Add lint commands for manual linting (optional):
 
-```json
+```js
+// package.json
+
 {
   "scripts": {
     "lint": "eslint .",
@@ -25,29 +27,32 @@ Add `lint` commands for manual linting (optional):
 }
 ```
 
-## Usage
-
-### JS
+### JavaScript Config
 
 ```js
 // eslint.config.js
 
-import { jsConfig, ignoresConfig } from '@sveltek/eslint-config'
+import { defineConfig, jsConfig, ignoresConfig } from '@sveltek/eslint-config'
 
-export default [jsConfig, ignoresConfig]
+export default defineConfig([jsConfig, ignoresConfig])
 ```
 
-### TS
+### TypeScript Config
 
 ```js
 // eslint.config.js
 
-import { jsConfig, tsConfig, ignoresConfig } from '@sveltek/eslint-config'
+import {
+  defineConfig,
+  jsConfig,
+  tsConfig,
+  ignoresConfig,
+} from '@sveltek/eslint-config'
 
-export default [jsConfig, tsConfig, ignoresConfig]
+export default defineConfig([jsConfig, tsConfig, ignoresConfig])
 ```
 
-### Svelte/SvelteKit
+### Svelte/SvelteKit Config
 
 > [!NOTE]
 >
@@ -65,28 +70,30 @@ export default [jsConfig, tsConfig, ignoresConfig]
 // eslint.config.js
 
 import {
+  defineConfig,
   jsConfig,
   tsConfig,
   svelteConfig,
   ignoresConfig,
 } from '@sveltek/eslint-config'
 
-export default [jsConfig, tsConfig, svelteConfig, ignoresConfig]
+export default defineConfig([jsConfig, tsConfig, svelteConfig, ignoresConfig])
 ```
 
-## Customization
-
-#### eslint.config.js
+## Custom Setup
 
 ```js
+// eslint.config.js
+
 import {
+  defineConfig,
+  globalIgnores,
   jsConfig,
   tsConfig,
-  svelteConfig,
   ignores,
 } from '@sveltek/eslint-config'
 
-export default [
+export default defineConfig([
   jsConfig,
   tsConfig,
   svelteConfig,
@@ -108,11 +115,11 @@ export default [
       // ...
     }
   }
-  {
-    ignores: [...ignores, '**/dir/**/*'],
-  },
-]
+  globalIgnores([...ignores, '**/dir/']),
+])
 ```
+
+For more info on how to `ignore files`, see the official [docs](https://eslint.org/docs/latest/use/configure/ignore).
 
 ## Community
 
