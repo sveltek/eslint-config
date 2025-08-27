@@ -121,12 +121,6 @@ export default defineConfig([
 
 For more info on how to `ignore files`, see the official [docs](https://eslint.org/docs/latest/use/configure/ignore).
 
-## Community
-
-Feel free to ask questions or share new ideas.
-
-Use the official [discussions](https://github.com/sveltek/eslint-config/discussions) to get involved.
-
 ## License
 
 Developed in 🇭🇷 Croatia, © Sveltek.
