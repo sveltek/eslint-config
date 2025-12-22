@@ -11,6 +11,6 @@ export default defineConfig({
   externals,
   entries: [
     { input: './src/index.js' },
-    { dts: './src/types.ts', output: './dist/index.d.mts' },
+    { dts: './src/types.ts', output: './dist/index.d.ts' },
   ],
 })
