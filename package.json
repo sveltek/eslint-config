@@ -45,19 +45,19 @@
     }
   },
   "dependencies": {
-    "@eslint/js": "^9.39.2",
-    "@typescript-eslint/eslint-plugin": "^8.53.0",
-    "@typescript-eslint/parser": "^8.53.0",
-    "eslint-plugin-svelte": "^3.14.0",
-    "globals": "^17.0.0",
-    "svelte-eslint-parser": "^1.4.1"
+    "@eslint/js": "^9.39.4",
+    "@typescript-eslint/eslint-plugin": "^8.57.0",
+    "@typescript-eslint/parser": "^8.57.0",
+    "eslint-plugin-svelte": "^3.15.2",
+    "globals": "^17.4.0",
+    "svelte-eslint-parser": "^1.6.0"
   },
   "devDependencies": {
-    "@hypernym/bundler": "^0.31.1",
-    "@sveltek/prettier-config": "^1.0.6",
-    "@sveltek/tsconfig": "^1.0.1",
-    "eslint": "^9.39.2",
-    "prettier": "^3.8.0",
+    "@hypernym/bundler": "^0.32.1",
+    "@sveltek/prettier-config": "^1.0.7",
+    "@sveltek/tsconfig": "^1.1.0",
+    "eslint": "^9.39.4",
+    "prettier": "^3.8.1",
     "typescript": "^5.9.3"
   }
 }
